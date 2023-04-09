@@ -1,9 +1,11 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     outline: none;
+    font-family: 'Nunito', arial, verdana, helvetica, sans-serif;
 }
 
 body{
@@ -18,7 +20,7 @@ body{
 
 div#container{
     padding: 20px;
-    background-color: white;
+    background-color: #ffffff93;
     height: 500px;
     width: 400px;
     border-radius: 18px;
@@ -29,20 +31,26 @@ div#container{
 form#search{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 24px;
+    border-bottom: 1px solid white;
 }
 
 input#input{
+    color: #949292;
     width: 83%;
-    height: 30px;
-    padding: 3px 8px;
+    height: 35px;
+    padding: 3px 10px;
     outline: none;
-    font-size: 15px;
+    font-size: 18px;
     border: 1px solid gray;
     border-right: none;
     border-radius: 10px 0 0 10px;
 }
 
 button#bt_search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     font-size: 10px;
     width: 17%;
@@ -53,4 +61,65 @@ button#bt_search{
 
 button#bt_search:hover{
     background-color: #0280c9;
+}
+
+/* Localização */
+
+div#location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div#location>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div#location>div>h3{
+    font-size: 22px;
+    font-weight: 400;
+    padding: 0 4px;
+}
+
+/* Conteúdo */
+
+div#conteudo{
+    padding-top: 18px;
+    
+}
+
+h1#temp{
+    text-align: center;
+    margin: 50px 0;
+    font-size: 68px;
+}
+
+div#icon-temp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+div#icon-temp>p{
+    margin-right: 2px;
+    font-size: 18px;
+}
+
+div#windAndHumidity{
+    display: flex;
+    justify-content: center;
+}
+
+div#wind, div#humidity{
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+}
+
+div#wind{
+    border-right: 1px solid white;
 }
