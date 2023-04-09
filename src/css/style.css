@@ -81,12 +81,13 @@ div#location>div{
 div#location>div>h3{
     font-size: 22px;
     font-weight: 400;
-    padding: 0 4px;
+    padding: 0 7px 0 4px;
 }
 
 /* Conteúdo */
 
 div#conteudo{
+    display: none;
     padding-top: 18px; 
 }
 
@@ -117,4 +118,30 @@ div#wind, div#humidity{
     display: flex;
     flex-direction: row;
     padding: 10px;
+}
+
+
+/* Div inicial */
+
+div#initial_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+    font-size: 13px;
+    color: rgb(114, 114, 114);
+}
+
+
+div#loading_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+    display: none;
+}
+
+div#loading_div > img{
+    width: 40px;
+    height: 40px;
 }
