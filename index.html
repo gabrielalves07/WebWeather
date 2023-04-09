@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="shortcut icon" href="./src/img/clouds.ico" type="image/x-icon">
-    <title>Web Wheater</title>
+    <title>Web Weather</title>
 </head>
 <body>
     <div id="container">
@@ -27,26 +27,26 @@
                     <span class="material-symbols-outlined">
                         location_on
                     </span>
-                    <h3 id="city">Açailândia</h3>
-                    <img src="https://flagsapi.com/BR/flat/32.png">
+                    <h3 id="city">City</h3>
+                    <img src="https://flagsapi.com/BR/flat/32.png" id="flag">
                 </div>
                 <h1 id="temp">26 °C</h1>
                 <div id="icon-temp">
-                    <p>Núvens</p>
-                    <img src="http://openweathermap.org/img/wn/02d@2x.png" width="55px" height="55px" alt>
+                    <p id="desc">Description</p>
+                    <img id="icon" src="http://openweathermap.org/img/wn/02d@2x.png" width="55px" height="55px" alt>
                 </div>
                 <div id="windAndHumidity">
                     <div id="wind">
                         <span class="material-symbols-outlined">
                             air
                         </span>
-                        <p>17 km/h</p>
+                        <p id="wind_text">Wind speed</p>
                     </div>
                     <div id="humidity">
                         <span class="material-symbols-outlined">
                             humidity_high
                         </span>
-                        <p>22%</p>
+                        <p id="humidity_text">Humidity</p>
                     </div>
                 </div>
             </div>
