@@ -20,7 +20,7 @@ body{
 
 div#container{
     padding: 20px;
-    background-color: #ffffff93;
+    background-color: #ffffffa4;
     height: 450px;
     width: 350px;
     border-radius: 18px;
@@ -93,7 +93,7 @@ div#conteudo{
 
 h1#temp{
     text-align: center;
-    margin: 55px 0 20px 0;
+    margin: 55px 0 10px 0;
     font-size: 68px;
 }
 
@@ -101,7 +101,7 @@ div#icon-temp{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 
 div#icon-temp>p{
@@ -128,7 +128,7 @@ div#initial_div{
     align-items: center;
     justify-content: center;
     height: 85%;
-    font-size: 13px;
+    font-size: 15px;
     color: rgb(114, 114, 114);
 }
 

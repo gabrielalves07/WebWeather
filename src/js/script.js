@@ -11,6 +11,7 @@ const humidity = document.querySelector('#humidity_text');
 
 const div_conteudo = document.querySelector('#conteudo');
 const initial_div = document.querySelector('#initial_div');
+const initial_div_msg = document.querySelector('#initial_div_msg');
 
 const loading = document.querySelector('#loading_div');
 
@@ -28,6 +29,11 @@ async function searchWeather(endpoint){
 
     const response = await fetch(endpoint);
     
+    if(response.status === 404){
+        loading.style.display = 'none';
+        return error(initial_div, response.status);
+    } 
+
     loading.style.display = 'none';
     div_conteudo.style.display = 'block';
     const data = await response.json();
@@ -43,4 +49,10 @@ function updateInfo(p_city, p_temp, p_flag, p_desc, p_icon, p_wind, p_humidity){
     icon.src = `http://openweathermap.org/img/wn/${p_icon}@2x.png`;
     wind.innerHTML = `${p_wind} km/h`;
     humidity.innerHTML = `${p_humidity}%`;
+}
+
+function error(div, status){
+    div.style.display = 'flex';
+    initial_div_msg.style.color = 'tomato';
+    initial_div_msg.innerHTML = `Cidade não encontrada (Error ${status}) : (`;
 }
